@@ -15,25 +15,61 @@
 
     .rBody{
     background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20%;
     }
     .rQrcode{
-      display: flex;
+      /* display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: center; */
+      padding: 20px;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+      background-color: white;
+      border-radius: 20px;
+    }
+    .border{
+      border-radius: 20px;
+    }
+    @media screen and (max-width: 750px){
+      .rBody{
+        width: 100%;
+      }
+      .rQrcode{
+        width: 100%;
+      }
+      .rQrcode img{
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 375px){
+      .rBody{
+        width: 100%;
+      }
+
+      .rQrcode{
+        width: 100%;
+        background-color: tan;
+      }
+      .rQrcode img{
+        width: 100%;
+      }
     }
   </style>
   
 </head>
 <body>
-
-  <!-- Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-   -->
    <div class="responsive">
       <div class="rBody">
         <div class="rQrcode">
-          <img src="./images/image-qr-code.png" alt="QR code">
+
+          <img src="./images/image-qr-code.png" alt="QR code" class="border">
+          <div class="">
+            <h2>Improve your front-end skills by building projects</h5>
+
+            Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+          </div>
         </div>
       </div>
    </div>
